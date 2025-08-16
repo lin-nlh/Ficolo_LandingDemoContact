@@ -8,7 +8,7 @@ export const quickLinks = [
 export const socialLinks = [
   { icon: "linkedin", href: "https://linkedin.com", label: "LinkedIn" },
   { icon: "instagram", href: "https://instagram.com", label: "Instagram" },
-  { icon: "facebook", href: "https://facebook.com", label: "Facebook" },
+  { icon: "facebook", href: "https://www.facebook.com/Ficolo.edu", label: "Facebook" },
   { icon: "youtube", href: "https://youtube.com", label: "Youtube" },
 ]
 
