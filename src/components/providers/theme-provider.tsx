@@ -10,15 +10,15 @@ interface AppThemeProviderProps extends ThemeProps {
 export function AppThemeProvider({ children, ...props }: AppThemeProviderProps) {
   return (
     <Theme
-      appearance="dark"         // 💡 Default: always dark
-      accentColor="jade"      // 🎨 Change this to match your brand
+      appearance="light"         // 💡 Default: always dark
+      accentColor="indigo"      // 🎨 Change this to match your brand
       grayColor="mauve"
       radius="large"
       scaling="100%"
       {...props}
     >
       {children}
-      <ThemePanel />
+      {/* <ThemePanel /> */}
     </Theme>
 
   );

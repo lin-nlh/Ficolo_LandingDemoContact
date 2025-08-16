@@ -1,11 +1,12 @@
 import React from "react"
-import { Linkedin, Instagram } from "lucide-react"
+import { Linkedin, Instagram, Facebook, Youtube } from "lucide-react"
 import { socialLinks } from "~/modules/common/data/footerData"
 const icons = {
   linkedin: Linkedin,
   instagram: Instagram,
+  facebook: Facebook,
+  youtube: Youtube,
 }
-
 export function SocialLinks() {
   return (
     <div>
