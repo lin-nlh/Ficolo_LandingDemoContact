@@ -6,6 +6,7 @@ import MainLayout from "~/modules/common/MainLayout"
 import { AppThemeProvider } from "~/components/providers/theme-provider"
 
 import "~/styles/globals.css";
+import MetaHead from "~/modules/common/metaData";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -14,6 +15,7 @@ const geist = Geist({
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <div className={geist.className}>
+      <MetaHead/>
       <AppThemeProvider>
        <MainLayout>
          <Component {...pageProps} />
