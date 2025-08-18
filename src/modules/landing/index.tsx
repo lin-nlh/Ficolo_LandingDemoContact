@@ -61,6 +61,23 @@ export default function LandingPage() {
             border: 1px solid rgba(255, 255, 255, 0.18);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
           }
+          .liquid-glass-card {
+            background: linear-gradient(145deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 
+              0 8px 32px rgba(31, 38, 135, 0.15),
+              inset 0 1px 0 rgba(255,255,255,0.4),
+              inset 0 -1px 0 rgba(255,255,255,0.1);
+          }
+          .liquid-glass-card:hover {
+            background: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.2) 100%);
+            box-shadow: 
+              0 20px 40px rgba(31, 38, 135, 0.2),
+              inset 0 1px 0 rgba(255,255,255,0.5),
+              inset 0 -1px 0 rgba(255,255,255,0.2);
+          }
           .reveal {
             position: relative;
             transform: translateY(100px);

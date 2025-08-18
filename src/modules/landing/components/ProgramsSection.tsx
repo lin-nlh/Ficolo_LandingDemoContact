@@ -2,6 +2,7 @@
 // Displays program offerings with glassmorphism cards and reveal animations
 "use client"
 import React from "react"
+import Link from "next/link"
 import { programs } from "../data/programs"
 
 export function ProgramsSection() {
@@ -21,9 +22,9 @@ export function ProgramsSection() {
               <h3 className="text-xl font-bold ficolo-blue mb-3">{title}</h3>
               <p className="text-sm text-gray-600 mb-4">{target}</p>
               <p className="text-gray-700 mb-4">{description}</p>
-              <a href={href} className="font-semibold text-blue-700 hover:text-blue-900">
+              <Link href={href} className="font-semibold text-blue-700 hover:text-blue-900">
                 Learn More →
-              </a>
+              </Link>
             </div>
           ))}
         </div>
