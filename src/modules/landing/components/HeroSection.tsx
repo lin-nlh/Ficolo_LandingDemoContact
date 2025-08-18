@@ -1,34 +1,28 @@
 // HeroSection.tsx
-// Top hero section for the FICOLO landing page
+// Top hero section with animated gradient background and glassmorphism styles
 "use client"
 import React from "react"
-import Link from "next/link"
-import { Button } from "@radix-ui/themes"
-
-// The hero content is defined inline rather than via external data because
-// the FICOLO design requires rich markup (gradient text) that isn’t easily
-// expressed as plain strings.
 
 export function HeroSection() {
   return (
     <section
       id="hero"
-      className="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/10 text-foreground w-full py-24 border-b border-border scroll-mt-16"
+      className="min-h-screen flex items-center pt-20 relative overflow-hidden animated-gradient-bg"
     >
-      <div className="container px-4 mx-auto max-w-5xl text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-          Let&apos;s Code, Create &amp; Imagine <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-purple-500">
-            The FICOLO Way!
-          </span>
+      <div className="container mx-auto px-6 text-center z-10">
+        <h1 className="text-4xl md:text-7xl font-black ficolo-blue leading-tight mb-4">
+          Let&apos;s Code, Create &amp; Imagine<br />
+          <span className="ficolo-pixels">The FICOLO Way!</span>
         </h1>
-        <p className="text-muted-foreground text-lg md:text-xl mb-8">
-          Equipping students aged 8–16 with future‑ready AI &amp; Digital Skills
-          to open doors to a brighter tomorrow.
+        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          Equipping students aged 8–16 with future-ready AI &amp; Digital Skills to open doors to a brighter tomorrow.
         </p>
-        <Button asChild size="3" variant="solid">
-          <Link href="#programs">Explore Our Programs</Link>
-        </Button>
+        <a
+          href="#programs"
+          className="bg-ficolo-blue text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-800 transition shadow-xl transform hover:scale-105"
+        >
+          Explore Our Programs
+        </a>
       </div>
     </section>
   )
