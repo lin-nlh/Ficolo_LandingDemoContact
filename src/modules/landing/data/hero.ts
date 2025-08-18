@@ -1,8 +1,13 @@
+// FICOLO hero data
+// Although our HeroSection overrides this data, we update it to reflect the new
+// messaging for completeness. The original site used the hero object for
+// content; here we keep it in sync with the new copy.
+
 export const hero = {
-  headline: "Uncover Hidden Leverage in Your Business",
+  headline: "Let’s Code, Create & Imagine The FICOLO Way!",
   subheadline:
-    "The Builders’ Stack is a ritual-based growth engine that helps you go from stuck to scaling — starting with just 15 minutes of structured reflection followed by quick turn transformation for real traction.",
-  ctaLabel: "Get Started",
-  ctaHref: "/demo", // Smooth scroll anchor
-  tagline: "Build with 9Figures, FTLP, and GVN Nexus",
+    "Equipping students aged 8–16 with future‑ready AI & Digital Skills to open doors to a brighter tomorrow.",
+  ctaLabel: "Explore Our Programs",
+  ctaHref: "#programs",
+  tagline: "",
 }
