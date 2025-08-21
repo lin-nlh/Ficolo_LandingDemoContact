@@ -239,11 +239,7 @@ export default function FoundationProgram() {
               Your Pathway to Japan Starts Here
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              The FICOLO‑OUS Foundation Program is a 6‑month intensive course
-              designed for pre‑university students. Earn your GED, master
-              Japanese language essentials and build in‑demand digital skills
-              before transferring to Okayama University of Science through
-              our 2+2 articulation pathway.
+              🎯 6-month intensive program • 🎓 GED certification • 🇯🇵 Japanese fluency • 💻 Digital skills • 🏫 Direct pathway to Okayama University
             </p>
             <a
               href="#highlights"
@@ -257,43 +253,54 @@ export default function FoundationProgram() {
         {/* Overview Section */}
         <section
           id="overview"
-          className="py-16 px-6 md:px-20 bg-white reveal"
+          className="py-20 bg-gray-50"
         >
-          <h2 className="text-2xl md:text-3xl font-bold ficolo-blue mb-6 text-center">
-            Program Overview
-          </h2>
-          <div className="max-w-5xl mx-auto text-gray-700 space-y-6 text-base md:text-lg">
-            <p>
-              The FICOLO‑OUS Foundation Program bridges the gap between high
-              school and university. Over six months you will prepare
-              for the internationally recognised General Educational
-              Development (GED) high‑school equivalency test, gain
-              conversational Japanese language proficiency and acquire
-              hands‑on digital skills through coding projects and IT
-              fundamentals. Successful graduates can transition directly
-              into the first two years of the 2+2 programme at Okayama
-              University of Science (OUS) in Japan, with the final two
-              years spent in a chosen specialisation.
-            </p>
-            <p>
-              This pathway is ideal for students aged 16+ who have
-              completed at least grade 10 or equivalent and are ready to
-              embark on an international learning journey. The foundation
-              course is delivered in English with additional Japanese
-              language support, ensuring you are fully prepared for life
-              and study in Japan.
-            </p>
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12 reveal">
+              <h2 className="text-3xl md:text-4xl font-bold ficolo-blue">
+                🎯 What You'll Achieve
+              </h2>
+              <p className="text-gray-600 mt-2">
+                Your complete pathway to international success
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 items-center">
+              <div className="text-center reveal">
+                <div className="text-6xl mb-4">🎓</div>
+                <h3 className="text-xl font-bold ficolo-blue mb-3">GED Certification</h3>
+                <p className="text-gray-600">
+                  Earn your internationally recognized high school equivalency
+                </p>
+              </div>
+              <div className="text-center reveal">
+                <div className="text-6xl mb-4">🇯🇵</div>
+                <h3 className="text-xl font-bold ficolo-blue mb-3">Japanese Fluency</h3>
+                <p className="text-gray-600">
+                  Master conversational Japanese for life and study in Japan
+                </p>
+              </div>
+              <div className="text-center reveal">
+                <div className="text-6xl mb-4">💻</div>
+                <h3 className="text-xl font-bold ficolo-blue mb-3">Digital Skills</h3>
+                <p className="text-gray-600">
+                  Build coding and technology skills for the future
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Highlights Section */}
         <section
           id="highlights"
-          className="py-16 px-6 md:px-20 animated-gradient-bg reveal"
+          className="py-20 animated-gradient-bg"
         >
-          <h2 className="text-2xl md:text-3xl font-bold ficolo-blue mb-8 text-center">
-            Key Highlights
+          <h2 className="text-3xl md:text-4xl font-bold ficolo-blue">
+            ✨ Program Highlights
           </h2>
+          <p className="text-gray-600 mt-2">
+            Everything you need for success in Japan
+          </p>
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* GED Preparation Card */}
             <div className="glass-effect p-6 rounded-lg border border-ficolo-blue">
