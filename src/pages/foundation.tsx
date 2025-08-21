@@ -236,10 +236,10 @@ export default function FoundationProgram() {
         >
           <div className="container mx-auto px-6 text-center z-10">
             <h1 className="text-4xl md:text-7xl font-black ficolo-blue leading-tight mb-4">
-              Your Pathway to Japan Starts Here
+              FICOLOxOUS Foundation Program
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              🎯 6-month intensive program • 🎓 GED certification • 🇯🇵 Japanese fluency • 💻 Digital skills • 🏫 Direct pathway to Okayama University
+              🎯 6-8 month program • 🎓 GED preparation • 🇯🇵 Japanese JLPT N3 • 💻 Coding skills • 🏫 Direct pathway to Okayama University of Science
             </p>
             <a
               href="#highlights"
@@ -258,33 +258,32 @@ export default function FoundationProgram() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-12 reveal">
               <h2 className="text-3xl md:text-4xl font-bold ficolo-blue">
-                🎯 What You'll Achieve
+                🎯 Who Should Enroll?
               </h2>
               <p className="text-gray-600 mt-2">
-                Your complete pathway to international success
+                Two pathways designed for different academic backgrounds
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8 items-center">
-              <div className="text-center reveal">
-                <div className="text-6xl mb-4">🎓</div>
-                <h3 className="text-xl font-bold ficolo-blue mb-3">GED Certification</h3>
-                <p className="text-gray-600">
-                  Earn your internationally recognized high school equivalency
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="glass-effect p-8 rounded-2xl text-center reveal">
+                <div className="text-6xl mb-4">📚</div>
+                <h3 className="text-xl font-bold ficolo-blue mb-3">Without Myanmar Grade 12</h3>
+                <p className="text-gray-600 mb-4">
+                  Complete GED preparation + Japanese + Coding
                 </p>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-sm text-blue-700 font-semibold">⏱️ Duration: 6-8 months</p>
+                </div>
               </div>
-              <div className="text-center reveal">
-                <div className="text-6xl mb-4">🇯🇵</div>
-                <h3 className="text-xl font-bold ficolo-blue mb-3">Japanese Fluency</h3>
-                <p className="text-gray-600">
-                  Master conversational Japanese for life and study in Japan
+              <div className="glass-effect p-8 rounded-2xl text-center reveal">
+                <div className="text-6xl mb-4">�</div>
+                <h3 className="text-xl font-bold ficolo-blue mb-3">With Myanmar Grade 12</h3>
+                <p className="text-gray-600 mb-4">
+                  Focus on Japanese language + Coding skills
                 </p>
-              </div>
-              <div className="text-center reveal">
-                <div className="text-6xl mb-4">💻</div>
-                <h3 className="text-xl font-bold ficolo-blue mb-3">Digital Skills</h3>
-                <p className="text-gray-600">
-                  Build coding and technology skills for the future
-                </p>
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <p className="text-sm text-green-700 font-semibold">⏱️ Duration: 6 months</p>
+                </div>
               </div>
             </div>
           </div>
@@ -296,10 +295,10 @@ export default function FoundationProgram() {
           className="py-20 animated-gradient-bg"
         >
           <h2 className="text-3xl md:text-4xl font-bold ficolo-blue">
-            ✨ Program Highlights
+            📚 Core Focus Areas
           </h2>
           <p className="text-gray-600 mt-2">
-            Everything you need for success in Japan
+            Three essential pillars for university success
           </p>
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* GED Preparation Card */}
@@ -477,23 +476,56 @@ export default function FoundationProgram() {
         </section>
 
         {/* Call to Action Section */}
-        <section className="py-16 px-6 md:px-20 bg-white reveal">
-          <div className="max-w-xl mx-auto text-center space-y-6">
-            <h2 className="text-2xl md:text-3xl font-bold ficolo-blue">
-              Ready to Start Your Journey?
-            </h2>
-            <p className="text-gray-700 text-base md:text-lg">
-              Embark on an unforgettable journey that combines academic excellence,
-              cultural immersion and cutting‑edge digital learning. Apply now
-              or contact us to learn more about the FICOLO‑OUS Foundation
-              Program.
-            </p>
-            <a
-              href="/register"
-              className="bg-ficolo-blue text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-800 transition inline-block"
-            >
-              Apply Now
-            </a>
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12 reveal">
+              <h2 className="text-3xl md:text-4xl font-bold ficolo-blue">
+                🚀 GED Placement Process
+              </h2>
+              <p className="text-gray-600 mt-2">
+                Step-by-step pathway visualization
+              </p>
+            </div>
+            
+            <div className="max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-4 gap-4 mb-12">
+                <div className="glass-effect p-6 rounded-2xl text-center reveal">
+                  <div className="w-12 h-12 rounded-full bg-ficolo-blue text-white flex items-center justify-center font-bold mx-auto mb-4">1</div>
+                  <h4 className="font-bold ficolo-blue mb-2">📝 Placement Test</h4>
+                  <p className="text-sm text-gray-600">English, Math, Science, Social Studies</p>
+                </div>
+                <div className="glass-effect p-6 rounded-2xl text-center reveal">
+                  <div className="w-12 h-12 rounded-full bg-ficolo-blue text-white flex items-center justify-center font-bold mx-auto mb-4">2</div>
+                  <h4 className="font-bold ficolo-blue mb-2">📚 Track Assignment</h4>
+                  <p className="text-sm text-gray-600">GED (6mo) or Pre-GED (4mo) + GED</p>
+                </div>
+                <div className="glass-effect p-6 rounded-2xl text-center reveal">
+                  <div className="w-12 h-12 rounded-full bg-ficolo-blue text-white flex items-center justify-center font-bold mx-auto mb-4">3</div>
+                  <h4 className="font-bold ficolo-blue mb-2">✍️ Official GED Exam</h4>
+                  <p className="text-sm text-gray-600">All four subjects examination</p>
+                </div>
+                <div className="glass-effect p-6 rounded-2xl text-center reveal">
+                  <div className="w-12 h-12 rounded-full bg-ficolo-blue text-white flex items-center justify-center font-bold mx-auto mb-4">4</div>
+                  <h4 className="font-bold ficolo-blue mb-2">🎓 University Ready</h4>
+                  <p className="text-sm text-gray-600">Eligible for OUS admission</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center reveal">
+              <h3 className="text-2xl font-bold ficolo-blue mb-4">
+                Ready to Start Your Journey?
+              </h3>
+              <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
+                Join the FICOLOxOUS Foundation Program and prepare for your Bachelor of Information Science and Engineering at Okayama University of Science, Japan.
+              </p>
+              <a
+                href="/register"
+                className="bg-ficolo-blue text-white py-4 px-8 rounded-full text-lg font-semibold hover:bg-blue-800 transition shadow-xl transform hover:scale-105 inline-block"
+              >
+                Apply Now
+              </a>
+            </div>
           </div>
         </section>
       </main>
