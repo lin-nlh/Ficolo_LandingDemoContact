@@ -48,6 +48,18 @@ export default function FoundationProgram() {
           content="Prepare for your future in Japan with the FICOLO‑OUS Foundation Program. Complete your GED, learn Japanese and build digital skills before transferring to Okayama University of Science."
         />
         <link rel="icon" href="/favicon.ico" />
+        {/* Google fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+          rel="stylesheet"
+        />
+          {/* Load Tailwind via CDN to support utility classes used throughout the page. */}
+          <script
+            src="https://cdn.tailwindcss.com"
+            // @ts-ignore: external script injection is safe here
+          ></script>
       </Head>
 
       {/* Custom styles for FICOLO theme. These mirror styles defined on
@@ -120,125 +132,126 @@ export default function FoundationProgram() {
         }
       `}</style>
 
-      {/* Navigation bar: simplified version of the homepage nav that
-          collapses into a mobile menu on small screens. */}
-      <header className="fixed top-0 left-0 w-full z-20">
-        <nav className="glass-effect flex items-center justify-between py-4 px-6 bg-white/50 backdrop-blur-sm">
-          <a href="/" className="text-xl font-bold ficolo-blue">
-            FICOLO
+      {/* Header & Navigation with Glass Effect */}
+      <header
+        id="navbar"
+        className="glass-effect fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50 rounded-2xl transition-all duration-300"
+      >
+        <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+          <a href="/" className="flex items-center space-x-2">
+            <div className="flex items-end space-x-0.5">
+              <div className="w-2 h-2 bg-orange-500 rounded-sm"></div>
+              <div className="w-2 h-4 bg-yellow-400 rounded-sm"></div>
+              <div className="w-2 h-6 bg-cyan-400 rounded-sm"></div>
+            </div>
+            <span className="text-2xl font-bold ficolo-blue">FICOLO</span>
           </a>
-          {/* Mobile menu toggle */}
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-8 items-center">
+            <a href="/" className="text-gray-700 font-semibold hover:ficolo-blue transition">
+              Home
+            </a>
+            <a href="#overview" className="text-gray-700 font-semibold hover:ficolo-blue transition">
+              Overview
+            </a>
+            <a href="#highlights" className="text-gray-700 font-semibold hover:ficolo-blue transition">
+              Highlights
+            </a>
+            <a href="#pathway" className="text-gray-700 font-semibold hover:ficolo-blue transition">
+              Pathway
+            </a>
+            <a
+              href="#eligibility"
+              className="text-gray-700 font-semibold hover:ficolo-blue transition"
+            >
+              Eligibility
+            </a>
+          </nav>
+          {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden text-ficolo-blue focus:outline-none"
+            className="md:hidden text-ficolo-blue"
           >
-            {/* Simple hamburger icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth="2"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-7 6h7"
               />
             </svg>
           </button>
-          {/* Desktop navigation */}
-          <ul className="hidden md:flex space-x-8 text-sm font-medium ficolo-blue">
-            <li>
-              <a href="/" className="hover:underline">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#overview" className="hover:underline">
-                Overview
-              </a>
-            </li>
-            <li>
-              <a href="#highlights" className="hover:underline">
-                Highlights
-              </a>
-            </li>
-            <li>
-              <a href="#pathway" className="hover:underline">
-                Pathway
-              </a>
-            </li>
-            <li>
-              <a href="#eligibility" className="hover:underline">
-                Eligibility
-              </a>
-            </li>
-            <li>
-              <a href="/register" className="bg-ficolo-blue text-white py-2 px-4 rounded-full hover:bg-blue-800 transition">
-                Register Now
-              </a>
-            </li>
-          </ul>
-        </nav>
-        {/* Mobile navigation menu */}
-        {mobileOpen && (
-          <div className="bg-white/90 backdrop-blur-md shadow-md md:hidden">
-            <ul className="flex flex-col space-y-4 py-6 px-6 ficolo-blue text-base">
-              <li>
-                <a href="#overview" onClick={() => setMobileOpen(false)}>
-                  Overview
-                </a>
-              </li>
-              <li>
-                <a href="#highlights" onClick={() => setMobileOpen(false)}>
-                  Highlights
-                </a>
-              </li>
-              <li>
-                <a href="#pathway" onClick={() => setMobileOpen(false)}>
-                  Pathway
-                </a>
-              </li>
-              <li>
-                <a href="#eligibility" onClick={() => setMobileOpen(false)}>
-                  Eligibility
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/register"
-                  className="bg-ficolo-blue text-white py-2 px-4 rounded-full inline-block hover:bg-blue-800 transition"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Register Now
-                </a>
-              </li>
-            </ul>
-          </div>
-        )}
-      </header>
-
-      <main className="pt-20">
-        {/* Hero Section */}
-        <section className="animated-gradient-bg py-24 px-6 text-center reveal">
-          <h1 className="text-3xl md:text-5xl font-bold ficolo-blue mb-4">
-            Your Pathway to Japan Starts Here
-          </h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 mb-8">
-            The FICOLO‑OUS Foundation Program is a 6‑month intensive course
-            designed for pre‑university students. Earn your GED, master
-            Japanese language essentials and build in‑demand digital skills
-            before transferring to Okayama University of Science through
-            our 2+2 articulation pathway.
-          </p>
+        </div>
+        {/* Mobile Menu */}
+        <div className={`${mobileOpen ? "block" : "hidden"} md:hidden px-6 pb-4`}>
+          <a
+            href="/"
+            className="block py-2 text-gray-700 font-semibold hover:ficolo-blue transition"
+            onClick={() => setMobileOpen(false)}
+          >
+            Home
+          </a>
+          <a
+            href="#overview"
+            className="block py-2 text-gray-700 font-semibold hover:ficolo-blue transition"
+            onClick={() => setMobileOpen(false)}
+          >
+            Overview
+          </a>
           <a
             href="#highlights"
-            className="bg-ficolo-blue text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-800 transition"
+            className="block py-2 text-gray-700 font-semibold hover:ficolo-blue transition"
+            onClick={() => setMobileOpen(false)}
           >
-            Explore Highlights
+            Highlights
           </a>
+          <a
+            href="#pathway"
+            className="block py-2 text-gray-700 font-semibold hover:ficolo-blue transition"
+            onClick={() => setMobileOpen(false)}
+          >
+            Pathway
+          </a>
+          <a
+            href="#eligibility"
+            className="block py-2 text-gray-700 font-semibold hover:ficolo-blue transition"
+            onClick={() => setMobileOpen(false)}
+          >
+            Eligibility
+          </a>
+        </div>
+      </header>
+
+      <main>
+        {/* Hero Section */}
+        <section
+          id="hero"
+          className="min-h-screen flex items-center pt-20 relative overflow-hidden animated-gradient-bg"
+        >
+          <div className="container mx-auto px-6 text-center z-10">
+            <h1 className="text-4xl md:text-7xl font-black ficolo-blue leading-tight mb-4">
+              Your Pathway to Japan Starts Here
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              The FICOLO‑OUS Foundation Program is a 6‑month intensive course
+              designed for pre‑university students. Earn your GED, master
+              Japanese language essentials and build in‑demand digital skills
+              before transferring to Okayama University of Science through
+              our 2+2 articulation pathway.
+            </p>
+            <a
+              href="#highlights"
+              className="bg-ficolo-blue text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-800 transition shadow-xl transform hover:scale-105"
+            >
+              Explore Highlights
+            </a>
+          </div>
         </section>
 
         {/* Overview Section */}
@@ -479,8 +492,10 @@ export default function FoundationProgram() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white py-6 text-center text-sm text-gray-600">
-        © 2025 FICOLO – AI &amp; Digital Learning Center. All rights reserved.
+      <footer className="bg-gray-800 text-white py-6">
+        <div className="container mx-auto px-6 text-center text-sm">
+          <p>&copy; 2025 FICOLO – AI &amp; Digital Learning Center. All rights reserved.</p>
+        </div>
       </footer>
     </>
   );
