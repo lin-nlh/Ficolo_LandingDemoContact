@@ -277,7 +277,7 @@ export default function Home() {
                   A 6-month program combining GED prep, Japanese language training, and IT
                   education for a pathway to Okayama University of Science, Japan.
                 </p>
-                <a href="#" className="font-semibold text-blue-700 hover:text-blue-900">
+                <a href="/foundation" className="font-semibold text-blue-700 hover:text-blue-900">
                   Learn More →
                 </a>
               </div>
